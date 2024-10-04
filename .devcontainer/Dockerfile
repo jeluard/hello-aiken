@@ -1,5 +1,5 @@
 FROM mcr.microsoft.com/devcontainers/rust:1-1-bookworm
 
 USER vscode
-RUN curl --proto '=https' --tlsv1.2 -LsSf https://install.aiken-lang.org | sh && . $HOME/.aiken/bin/env
-RUN aikup
+RUN curl --proto '=https' --tlsv1.2 -LsSf https://install.aiken-lang.org
+RUN $HOME/.aiken/bin/aikup
